@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var width = 200.0
+    @State private var height = 200.0
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        Text("Hello, world!")
+            .frame(width: width, height: height)
+            .modifier(DraggableModifier(width: $width, height: $height, hasBorder: true))
     }
 }
 
