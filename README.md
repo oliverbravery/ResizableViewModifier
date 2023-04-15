@@ -1,4 +1,7 @@
 # Draggable View Resize Modifier
+
+![Demo Gif](demo.gif)
+
 This is a SwiftUI project that contains a custom SwiftUI modifier called DraggableModifier. This view adds draggable handles around a views frame, allowing the user to adjust its width and height.
 
 ## Getting started
